@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.gudenau.minecraft.datafixerapi.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "ChunkSerializerMixin",
+    "EntityChunkDataAccessMixin",
+    "LevelPropertiesMixin",
+    "PersistentStateMixin",
+    "PlayerAdvancementTrackerMixin",
+    "PlayerEntityMixin",
+    "SchemasMixin",
+    "ServerStatHandlerMixin",
+    "StructureMixin"
+  ],
+  "client": [
+    "client.HotbarStorageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

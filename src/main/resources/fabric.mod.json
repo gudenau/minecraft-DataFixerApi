@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "gud_data_fixer_api",
+  "version": "${version}",
+
+  "name": "Data Fixer Api",
+  "description": "This let's you use Data Fixers to fix your data!",
+  "authors": [
+    "gudenau"
+  ],
+  "contact": {
+  },
+
+  "icon": "assets/gud_data_fixer_api/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.gudenau.minecraft.datafixerapi.DataFixerEntry"
+    ],
+    "client": [
+      "net.gudenau.minecraft.datafixerapi.DataFixerEntry"
+    ]
+  },
+  "mixins": [
+    "gud_data_fixer_api.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  }
+}
